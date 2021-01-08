@@ -5,11 +5,22 @@ function checkForName(inputText) {
         "Janeway",
         "Kirk",
         "Archer",
-        "Georgiou"
+        "Georgiou",
+    ]
+
+    let pokemon = [
+        "Pokemon",
+        "Ditto"
     ]
 
     if(names.includes(inputText)) {
         alert("Welcome, Captain!")
+        return "captain"
+    }
+
+    if(pokemon.includes(inputText)) {
+        alert("Welcome, Pokemon!")
+        return "pokemon"
     }
 }
 
